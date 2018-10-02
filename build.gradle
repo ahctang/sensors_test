@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        jcenter()
+    }
+}
+
+task start {
+    group 'application'
+    description 'Starts the sensor test'
+    dependsOn 'SensorServerFramework:bootRun'
+    dependsOn ':Sensor:run'
+    doLast {
+        println 'here'
+    }
+}
