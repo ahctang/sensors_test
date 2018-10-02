@@ -1,8 +1,8 @@
-# Ascent Robotics Sensor Test Solution
+# Sensor Test Solution
 
 ## Prerequisites
 1. Please make sure you are connected to the internet
-2. Java SDK v1.8.x
+2. RoboticsJava SDK v1.8.x
 
 ## Project Breakdown
 - The mock sensor server backend is implemented in the ServerSensorFramework project.
